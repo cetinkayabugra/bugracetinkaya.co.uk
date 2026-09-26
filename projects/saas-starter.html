@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SaaS Starter — Case Study | Bugra Cetinkaya, Software Engineer</title>
+  <meta name="description" content="Case study: SaaS Starter, an open-source Next.js foundation with authentication, Stripe billing and a protected dashboard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="is-loading">
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="eyebrow">Case study</span>
+      <span class="loader__text">SaaS Starter</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a href="../index.html" class="logo">
+      <span class="logo__mark">B</span>
+      <span class="logo__text">
+        <strong>Bugra Cetinkaya</strong>
+        <small>Software Engineer</small>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+      <span class="menu-toggle__label">Menu</span>
+      <span class="menu-toggle__bars"><i></i><i></i><i></i></span>
+    </button>
+  </header>
+
+  <nav class="menu" id="menu" aria-hidden="true">
+    <ul class="menu__list">
+      <li><a href="../index.html"><span>01</span>Home</a></li>
+      <li><a href="../index.html#work"><span>02</span>Case studies</a></li>
+      <li><a href="../index.html#about"><span>03</span>About</a></li>
+      <li><a href="../index.html#contact"><span>04</span>Contact</a></li>
+    </ul>
+    <p class="menu__foot small">© <span class="year"></span> Bugra Cetinkaya · Software Engineer</p>
+  </nav>
+
+  <main>
+    <!-- Intro -->
+    <section class="cs-hero">
+      <div class="wrapper">
+        <a href="../index.html#work" class="cs-back reveal">← All case studies</a>
+        <p class="eyebrow reveal">Case study · 2026 · Open source</p>
+        <h1 class="display reveal">SaaS Starter — production-ready full-stack SaaS foundation</h1>
+        <p class="lead reveal">
+          An open-source Next.js starter kit that ships authentication, subscription billing and a
+          protected dashboard out of the box, so teams can invest their time in the product rather
+          than the plumbing.
+        </p>
+
+        <div class="cs-meta reveal">
+          <div><span class="eyebrow">Type</span><p>Open-source product</p></div>
+          <div><span class="eyebrow">Role</span><p>Product design &amp; full-stack development</p></div>
+          <div><span class="eyebrow">Stack</span><p>Next.js, PostgreSQL, Prisma, Auth.js, Stripe</p></div>
+          <div><span class="eyebrow">Source</span><p><a href="https://github.com/cetinkayabugra/SaaS-Starter-Template" target="_blank" rel="noopener">View on GitHub ↗</a></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero screenshot -->
+    <section class="cs-shot" style="background:#1d1f3b">
+      <div class="cs-frame reveal">
+        <img src="../assets/projects/saas-starter/desk-landing.jpg" alt="SaaS Starter landing page">
+      </div>
+    </section>
+
+    <section class="cs-section">
+      <div class="wrapper cs-row">
+        <div class="reveal">
+          <p class="eyebrow">01 — Overview</p>
+          <h2>The brief</h2>
+        </div>
+        <div class="reveal">
+          <p>
+            Almost every SaaS product begins by rebuilding the same foundations: sign-up and sign-in,
+            recurring payments, account management and a secure application shell. This work is
+            costly, error-prone and rarely a competitive advantage.
+          </p>
+          <p>
+            The objective was a reusable, well-tested foundation that handles these concerns correctly
+            — including the difficult edge cases — behind a clean, easily rebranded interface.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section">
+      <div class="wrapper cs-row">
+        <div class="reveal">
+          <p class="eyebrow">02 — Challenge</p>
+          <h2>Key considerations</h2>
+        </div>
+        <ul class="cs-list reveal">
+          <li><strong>Billing correctness</strong><span>Stripe retries webhooks and does not guarantee order; subscription state must never drift.</span></li>
+          <li><strong>Security by default</strong><span>Protected routes, hashed credentials, validated input and rate-limited public endpoints.</span></li>
+          <li><strong>Operational readiness</strong><span>Clear failures on misconfiguration and guidance for serverless database pooling.</span></li>
+          <li><strong>Developer experience</strong><span>A fast, documented setup that a new team can run and extend within minutes.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cs-gallery">
+      <div class="wrapper">
+        <figure class="reveal" style="margin:0">
+          <div class="cs-frame"><img src="../assets/projects/saas-starter/desk-landing-1.jpg" alt="Feature highlights and pricing plans"></div>
+          <figcaption class="cs-caption">Marketing page — feature highlights and a three-tier pricing model.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cs-section">
+      <div class="wrapper cs-row">
+        <div class="reveal">
+          <p class="eyebrow">03 — Solution</p>
+          <h2>What was delivered</h2>
+        </div>
+        <ul class="cs-list reveal">
+          <li><strong>Authentication</strong><span>Auth.js v5 with email/password and Google OAuth, bcrypt hashing and proxy-level route protection.</span></li>
+          <li><strong>Subscription billing</strong><span>Stripe Checkout and Customer Portal across Free, Pro and Team plans.</span></li>
+          <li><strong>Idempotent webhooks</strong><span>Events recorded transactionally and ordered by timestamp, so retries and late deliveries cannot corrupt state.</span></li>
+          <li><strong>AI assistant</strong><span>An optional Claude-powered streaming chat widget with rate limiting and bounded input and output.</span></li>
+          <li><strong>Product analytics</strong><span>Optional PostHog integration with user identification and sign-up tracking.</span></li>
+          <li><strong>Quality gates</strong><span>Startup environment validation, Vitest tests, linting, type-checking and CI on every pull request.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cs-gallery">
+      <div class="wrapper">
+        <figure class="reveal" style="margin:0">
+          <div class="cs-duo">
+            <div class="cs-frame"><img src="../assets/projects/saas-starter/desk-dashboard.jpg" alt="Dashboard in light mode"></div>
+            <div class="cs-frame"><img src="../assets/projects/saas-starter/desk-dashboard-dark.jpg" alt="Dashboard in dark mode"></div>
+          </div>
+          <figcaption class="cs-caption">Protected dashboard — light and dark themes, following the user's system preference.</figcaption>
+        </figure>
+        <figure class="reveal" style="margin:0">
+          <div class="cs-duo">
+            <div class="cs-frame"><img src="../assets/projects/saas-starter/desk-signin.jpg" alt="Sign-in page"></div>
+            <div class="cs-frame"><img src="../assets/projects/saas-starter/desk-billing.jpg" alt="Billing and plan management"></div>
+          </div>
+          <figcaption class="cs-caption">Authentication and billing — sign-in with email or Google, and self-serve plan upgrades.</figcaption>
+        </figure>
+        <figure class="reveal" style="margin:0">
+          <div class="cs-phones" style="grid-template-columns:repeat(4,1fr)">
+            <img src="../assets/projects/saas-starter/mob-landing.jpg" alt="Mobile — landing">
+            <img src="../assets/projects/saas-starter/mob-landing-2.jpg" alt="Mobile — features">
+            <img src="../assets/projects/saas-starter/mob-dashboard.jpg" alt="Mobile — dashboard">
+            <img src="../assets/projects/saas-starter/mob-billing.jpg" alt="Mobile — billing">
+          </div>
+          <figcaption class="cs-caption">Fully responsive — every screen designed for mobile as well as desktop.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cs-section">
+      <div class="wrapper cs-row">
+        <div class="reveal">
+          <p class="eyebrow">04 — Outcome</p>
+          <h2>The result</h2>
+        </div>
+        <div class="reveal">
+          <p>
+            SaaS Starter provides a production-minded foundation that shortens time to launch for new
+            products. Authentication, payments and the application shell are in place from day one,
+            with the reliability and security details already addressed — leaving teams free to focus
+            on the features that differentiate their product.
+          </p>
+          <ul class="cs-stack" style="margin-top:32px">
+            <li>Next.js 16</li>
+            <li>React 19</li>
+            <li>TypeScript</li>
+            <li>PostgreSQL</li>
+            <li>Prisma</li>
+            <li>Auth.js v5</li>
+            <li>Stripe</li>
+            <li>Tailwind CSS</li>
+            <li>shadcn/ui</li>
+            <li>Claude API</li>
+            <li>PostHog</li>
+            <li>Vitest</li>
+            <li>GitHub Actions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper cs-nextproj reveal">
+        <span class="eyebrow" style="margin:0">Next case study</span>
+        <a href="xage-ink.html">Xage Ink <b>→</b></a>
+      </div>
+    </section>
+
+    <!-- Next -->
+    <section class="cs-next" id="contact">
+      <div class="wrapper reveal">
+        <p class="eyebrow">Hiring?</p>
+        <h2 class="display display--xl">
+          <a href="mailto:hello@bugracetinkaya.co.uk" class="cta__link">Let’s <span class="nowrap">talk<span class="arrow">→</span></span></a>
+        </h2>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper footer__bottom" style="margin-top:0;border-top:0;padding-top:0">
+      <p class="small">© <span class="year"></span> Bugra Cetinkaya.</p>
+      <p class="small"><a href="../index.html">Back to homepage</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

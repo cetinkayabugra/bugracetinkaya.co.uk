@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bugra Cetinkaya | Software Engineer</title>
+  <meta name="description" content="Bugra Cetinkaya, software engineer. Full-stack web applications built with TypeScript, React, Next.js and PostgreSQL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="eyebrow">Welcome</span>
+      <span class="loader__text">Wait a bit</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="#top" class="logo">
+      <span class="logo__mark">B</span>
+      <span class="logo__text">
+        <strong>Bugra Cetinkaya</strong>
+        <small>Software Engineer</small>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+      <span class="menu-toggle__label">Menu</span>
+      <span class="menu-toggle__bars"><i></i><i></i><i></i></span>
+    </button>
+  </header>
+
+  <!-- Fullscreen menu -->
+  <nav class="menu" id="menu" aria-hidden="true">
+    <ul class="menu__list">
+      <li><a href="#top"><span>01</span>Home</a></li>
+      <li><a href="#work"><span>02</span>Case studies</a></li>
+      <li><a href="#about"><span>03</span>About</a></li>
+      <li><a href="#contact"><span>04</span>Contact</a></li>
+    </ul>
+    <p class="menu__foot small">© <span class="year"></span> Bugra Cetinkaya · Software Engineer</p>
+  </nav>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__bg-word" aria-hidden="true">engineer.</div>
+      <div class="hero__portrait">
+        <img src="assets/portrait.jpg" alt="Portrait of Bugra Cetinkaya">
+      </div>
+      <div class="wrapper hero__copy">
+        <p class="eyebrow reveal">Bugra Cetinkaya · Software Engineer</p>
+        <h1 class="display reveal">Building reliable, full&#8209;stack web products</h1>
+        <p class="lead reveal">
+          I build web applications end to end, from data models and APIs to
+          polished interfaces, with a focus on clean architecture, security and
+          maintainable code. Currently open to software engineering roles.
+        </p>
+        <nav class="hero__links reveal">
+          <a href="#work" class="link-u">View Projects</a>
+          <span>or</span>
+          <a href="#contact" class="link-u">Get in Touch</a>
+        </nav>
+      </div>
+      <a href="#work" class="scroll-mouse" aria-label="Scroll to projects"><span></span></a>
+    </section>
+
+    <!-- Case studies -->
+    <section class="projects" id="work">
+      <div class="wrapper">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected projects</p>
+          <h2 class="display">Case studies</h2>
+        </div>
+
+        <div class="grid">
+          <a href="projects/xage-ink.html" class="tile tile--tall tile--featured reveal" style="--bg:#0b0b0b" data-theme="dark">
+            <i class="badge">new</i>
+            <div class="tile__art tile__art--phones">
+              <img src="assets/projects/xage-ink/mob-hero.jpg" alt="Xage Ink homepage on mobile" loading="lazy">
+              <img src="assets/projects/xage-ink/mob-portfolio.jpg" alt="Xage Ink portfolio on mobile" loading="lazy">
+            </div>
+            <div class="tile__copy">
+              <span class="eyebrow">2026</span>
+              <h3>Xage Ink — bilingual website for a private tattoo studio</h3>
+              <span class="more">View Case Study <b>→</b></span>
+            </div>
+          </a>
+
+          <a href="projects/hanpolo.html" class="tile tile--tall tile--featured tile--navy reveal" style="--bg:#132a6b" data-theme="dark">
+            <i class="badge">new</i>
+            <div class="tile__art tile__art--phones">
+              <img src="assets/projects/hanpolo/mob-hero.jpg" alt="Hanpolo homepage on mobile" loading="lazy">
+              <img src="assets/projects/hanpolo/mob-services.jpg" alt="Hanpolo services on mobile" loading="lazy">
+            </div>
+            <div class="tile__copy">
+              <span class="eyebrow">2026</span>
+              <h3>Hanpolo — website for an AI infrastructure studio</h3>
+              <span class="more">View Case Study <b>→</b></span>
+            </div>
+          </a>
+
+          <a href="projects/saas-starter.html" class="tile tile--tall tile--featured tile--indigo reveal" style="--bg:#e8eafb" data-theme="light">
+            <i class="badge">new</i>
+            <div class="tile__art tile__art--phones">
+              <img src="assets/projects/saas-starter/mob-landing.jpg" alt="SaaS Starter landing page on mobile" loading="lazy">
+              <img src="assets/projects/saas-starter/mob-billing.jpg" alt="SaaS Starter billing page on mobile" loading="lazy">
+            </div>
+            <div class="tile__copy">
+              <span class="eyebrow">2026 · Open source</span>
+              <h3>SaaS Starter — full-stack SaaS foundation</h3>
+              <span class="more">View Case Study <b>→</b></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="wrapper about__grid">
+        <div class="reveal">
+          <p class="eyebrow">About</p>
+          <h2 class="display">From requirements to production.</h2>
+        </div>
+        <div class="about__text reveal">
+          <p class="lead">
+            I'm a software engineer who delivers complete products: designing the
+            data model, building the API and interface, and shipping with tests and
+            CI in place. My recent work includes commercial websites for small
+            businesses and an open-source SaaS platform.
+          </p>
+          <ul class="services">
+            <li>TypeScript &amp; JavaScript</li>
+            <li>React &amp; Next.js</li>
+            <li>Node.js &amp; REST APIs</li>
+            <li>PostgreSQL &amp; Prisma</li>
+            <li>Authentication &amp; Stripe</li>
+            <li>Testing &amp; CI/CD</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="wrapper reveal">
+        <p class="eyebrow">Hiring?</p>
+        <h2 class="display display--xl">
+          <a href="mailto:hello@bugracetinkaya.co.uk" class="cta__link">Let’s <span class="nowrap">talk<span class="arrow">→</span></span></a>
+        </h2>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrapper footer__grid">
+      <div>
+        <h4>Contact<br>information —</h4>
+        <p>I welcome conversations about software engineering roles. Email is the best way to reach me.</p>
+        <p>E: <a href="mailto:hello@bugracetinkaya.co.uk">hello@bugracetinkaya.co.uk</a></p>
+      </div>
+      <div>
+        <h4>Latest<br>projects —</h4>
+        <ul>
+          <li><a href="projects/xage-ink.html">Xage Ink</a></li>
+          <li><a href="projects/hanpolo.html">Hanpolo</a></li>
+          <li><a href="projects/saas-starter.html">SaaS Starter</a></li>
+          <li><a href="#work" class="muted">All projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Current<br>availability —</h4>
+        <p>Actively looking for a full-time software engineering role.</p>
+        <p class="status"><i></i> Open to work</p>
+      </div>
+      <div>
+        <h4>Find<br>me on —</h4>
+        <ul>
+          <li><a href="https://github.com/cetinkayabugra" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrapper footer__bottom">
+      <p class="small">© <span class="year"></span> Bugra Cetinkaya.</p>
+      <p class="small">Software Engineer</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
